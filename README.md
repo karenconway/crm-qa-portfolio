@@ -2,7 +2,7 @@
 
 **Karen Conway** · QA Funcional Manual · karenconway0187@gmail.com
 
-Proyecto de portfolio basado en una **historia de usuario real de Declan CRM**, ejecutado sobre un entorno de pruebas que replica el módulo de Cuentas. Muestra el proceso completo de QA manual: análisis de la historia, diseño y ejecución de casos de prueba, evidencias, reporte de bugs, regresión con Selenium IDE y validación de datos con SQL.
+Proyecto de portfolio basado en una **historia de usuario real de CRM B2B**, ejecutado sobre un entorno de pruebas que replica el módulo de Cuentas. Muestra el proceso completo de QA manual: análisis de la historia, diseño y ejecución de casos de prueba, evidencias, reporte de bugs, regresión con Selenium IDE y validación de datos con SQL.
 
 ![Entorno de pruebas · módulo Cuentas](docs/evidencias/ejecucion-v1.0/CP-03.png)
 
