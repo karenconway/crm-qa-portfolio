@@ -1,0 +1,809 @@
+{
+  "id": "67a691cc-5574-4c28-b9b8-42f9f881ce6e",
+  "version": "2.0",
+  "name": "HU-001 Cantidad de empleados",
+  "url": "http://127.0.0.1:5173",
+  "tests": [
+    {
+      "id": "4b9036f3-d472-456f-abad-46f377899801",
+      "name": "CP-01 Crear el campo numérico",
+      "commands": [
+        {
+          "id": "4bc9c664-7481-49d5-8132-5d5235b2b9bc",
+          "comment": "Abrir el CRM",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a46c7460-32e4-45e2-ac44-5f5cccb2b41c",
+          "comment": "Restablecer datos desde Laboratorio QA",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-lab\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0c1ca592-208e-4847-9bb0-f976459488d6",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"reset-demo\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4447df76-ce71-45b3-a423-6be13b8e4b72",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"confirm-reset\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9cee7131-8cfd-4b87-bb63-233480196dbe",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-fields\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3ca34d5e-5739-4db4-9fc2-6b29450c5af7",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"new-field\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "25e26b4b-d880-4b10-ad01-0f32b18334f3",
+          "comment": "Nombre vacío: debe mostrar error",
+          "command": "click",
+          "target": "css=[data-testid=\"save-field\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fe1111ce-19fd-41f3-aead-df1a54633ec1",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=[data-testid=\"form-error\"]",
+          "targets": [],
+          "value": "Ingresá el nombre del campo."
+        },
+        {
+          "id": "37b33645-8119-49bb-8c91-a5f58869d8c9",
+          "comment": "Nombre válido",
+          "command": "type",
+          "target": "css=[data-testid=\"field-name\"]",
+          "targets": [],
+          "value": "Cantidad de empleados"
+        },
+        {
+          "id": "819d6071-3689-4809-a747-60e8b8bc8a2f",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"save-field\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1d89651f-9090-4b1a-b1a6-942081f2235b",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=[data-testid=\"toast\"]",
+          "targets": [],
+          "value": "Campo creado. Ya está disponible en alta y edición de Cuentas."
+        },
+        {
+          "id": "6549b58f-bd52-488f-a335-83b22bd1b629",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=.panel .quiet-badge",
+          "targets": [],
+          "value": "1 campo"
+        }
+      ]
+    },
+    {
+      "id": "4781ff4d-e334-4c3d-95bd-6215c5b498b3",
+      "name": "CP-02 El campo aparece en alta y edición",
+      "commands": [
+        {
+          "id": "1ab4b509-2ae3-448f-bfea-a856c2d7f2d6",
+          "comment": "Abrir el CRM",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6b5a38f7-cab3-43ec-a9e2-85e58fe45807",
+          "comment": "Restablecer datos desde Laboratorio QA",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-lab\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "cca1e7f5-fb3d-453a-b57f-00c850421a4c",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"reset-demo\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "69abfe33-6284-496a-9330-22864bb033e8",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"confirm-reset\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "21ae51b2-8a66-474f-9742-33e459b34125",
+          "comment": "Crear el campo Cantidad de empleados",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-fields\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9761918f-0ea7-4209-aa65-126bbfd4d481",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"new-field\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8b678de4-b2ba-4c1b-b748-3b01a7e7494f",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-testid=\"field-name\"]",
+          "targets": [],
+          "value": "Cantidad de empleados"
+        },
+        {
+          "id": "2c40655f-9684-4807-98ef-ab3719858382",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"save-field\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "13897f78-9ee1-4be4-9815-897a994d062d",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-accounts\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a27fed89-1aeb-4eac-8b9c-538538ebf184",
+          "comment": "Formulario de alta",
+          "command": "click",
+          "target": "css=[data-testid=\"new-account\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "6af3827c-3588-4d57-a4ed-415bce1139ad",
+          "comment": "",
+          "command": "assertElementPresent",
+          "target": "css=[data-field-name=\"Cantidad de empleados\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "862949bb-6eb7-42b0-8605-a16e6f6fe786",
+          "comment": "",
+          "command": "click",
+          "target": "xpath=//button[normalize-space()=\"Cancelar\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c59af9da-c40b-4ac8-ab91-22edfedf35b9",
+          "comment": "Formulario de edición de Litoral Logística",
+          "command": "click",
+          "target": "css=[data-testid=\"edit-account-2\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "dc38413d-a26d-4e49-9e24-ddfb271abf1f",
+          "comment": "",
+          "command": "assertElementPresent",
+          "target": "css=[data-field-name=\"Cantidad de empleados\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a1dcecab-583c-46b9-be09-6983d84fe64c",
+          "comment": "",
+          "command": "click",
+          "target": "xpath=//button[normalize-space()=\"Cancelar\"]",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "b4915992-c452-40e5-a83d-a90ff0299fed",
+      "name": "CP-03 Guardar un valor (límite 0)",
+      "commands": [
+        {
+          "id": "2aa1fd56-45af-4449-bd6e-a1bad1e38074",
+          "comment": "Abrir el CRM",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5aa9a30f-ef27-4d6c-b1a8-2f9816ecdaf9",
+          "comment": "Restablecer datos desde Laboratorio QA",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-lab\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "014a3b7d-3a59-4096-84db-50205ca9f796",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"reset-demo\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2d7902cc-7ed3-400d-b11e-31caf83925fd",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"confirm-reset\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "aa1258c8-afd6-4e97-a2be-a00a4d631034",
+          "comment": "Crear el campo Cantidad de empleados",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-fields\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "48d45d03-0c84-45e5-9fa2-dae57768b184",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"new-field\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "aba39fc8-4820-4cc9-913d-5be8c43deaf5",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-testid=\"field-name\"]",
+          "targets": [],
+          "value": "Cantidad de empleados"
+        },
+        {
+          "id": "c300116a-be63-459e-aff1-7a21d978613a",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"save-field\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "424a6d16-0bd6-433f-b95a-90e51066e02a",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-accounts\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "ac1ba714-acfe-4a0d-96fd-a57a936f57f8",
+          "comment": "Guardar 0",
+          "command": "click",
+          "target": "css=[data-testid=\"edit-account-2\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "4eb4d64e-2332-425b-9e74-5c0387be64bf",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-testid=\"custom-number\"]",
+          "targets": [],
+          "value": "0"
+        },
+        {
+          "id": "1f8c7f36-5f4d-4cab-9746-9d97aacb29ce",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"save-account\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "733f3ddb-f34f-467c-a17b-746185561419",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=[data-testid=\"toast\"]",
+          "targets": [],
+          "value": "Cuenta guardada correctamente."
+        },
+        {
+          "id": "e5489a29-f657-49ff-885a-8cec2e26e001",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=[data-testid=\"account-row-account-2\"] .custom-count",
+          "targets": [],
+          "value": "1 de 1 completos"
+        }
+      ]
+    },
+    {
+      "id": "4fe6478e-115e-470b-b799-0090e8b94cb3",
+      "name": "CP-04 El valor se mantiene al recargar",
+      "commands": [
+        {
+          "id": "b946781e-9853-4168-a123-bdc4305c3a9e",
+          "comment": "Abrir el CRM",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "8413f3c2-2886-4caa-a9de-0b8b1e4cbfdc",
+          "comment": "Restablecer datos desde Laboratorio QA",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-lab\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "19f6e010-a604-41c6-875e-37e3090ca433",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"reset-demo\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "79470229-02c1-456b-8748-70735596832f",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"confirm-reset\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0beadf99-f5ac-4a61-9ab4-3623e5992345",
+          "comment": "Crear el campo Cantidad de empleados",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-fields\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "41495b1d-9fcb-41fb-9463-5dfe16e982f8",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"new-field\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "fa24c551-b79b-42ed-bb34-f50aacb386d1",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-testid=\"field-name\"]",
+          "targets": [],
+          "value": "Cantidad de empleados"
+        },
+        {
+          "id": "fd0a112c-4784-47fe-a8f5-0d3bdba93dcf",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"save-field\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "07563b5d-ccdf-46c8-a960-90166581ce5e",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-accounts\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "31152404-2c62-4f03-8098-844fc1482f72",
+          "comment": "Guardar 80",
+          "command": "click",
+          "target": "css=[data-testid=\"edit-account-1\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "bfef134a-6867-4ef3-8d46-79d3494990ff",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-testid=\"custom-number\"]",
+          "targets": [],
+          "value": "80"
+        },
+        {
+          "id": "cf9d6c8e-3f74-4863-8176-daeaf0491533",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"save-account\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "2f50f239-f43c-482f-8496-4a8f57939cd3",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=[data-testid=\"toast\"]",
+          "targets": [],
+          "value": "Cuenta guardada correctamente."
+        },
+        {
+          "id": "ddcd4f56-b51a-40b4-ac23-46728ce5ebe8",
+          "comment": "Recargar la página",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "3d243cc3-8f19-48d4-84a8-dbe802bf9cf6",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"edit-account-1\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c2c044a7-eb77-439c-b5d8-4fbc3ecc03fa",
+          "comment": "",
+          "command": "assertValue",
+          "target": "css=[data-testid=\"custom-number\"]",
+          "targets": [],
+          "value": "80"
+        },
+        {
+          "id": "c76b0566-7643-4d2d-b315-4c05373c003d",
+          "comment": "",
+          "command": "click",
+          "target": "xpath=//button[normalize-space()=\"Cancelar\"]",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    },
+    {
+      "id": "67961d58-aa30-421f-a4ae-419913350754",
+      "name": "CP-05 No se pueden guardar letras",
+      "commands": [
+        {
+          "id": "de3f9b5f-75e6-4b2b-839c-6a1c4d248cb8",
+          "comment": "Abrir el CRM",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d797f7c6-8c83-4d35-a709-5661460310c8",
+          "comment": "Restablecer datos desde Laboratorio QA",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-lab\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9a24598d-0a12-488b-9fe4-2fe6099d469c",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"reset-demo\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "02b67554-c235-42a4-a401-843798f0dca9",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"confirm-reset\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "9606038f-109f-4e0e-a548-1bf6d18bfd38",
+          "comment": "Crear el campo Cantidad de empleados",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-fields\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "bb1ad41d-cb7b-49ca-940c-ec879dbbece2",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"new-field\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "5a4981d8-30d9-4267-9dc6-12e8efea15b3",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-testid=\"field-name\"]",
+          "targets": [],
+          "value": "Cantidad de empleados"
+        },
+        {
+          "id": "0d146030-89b7-4a61-853b-8de8bb564a7b",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"save-field\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "062debf0-8794-40f9-bf27-b5cd83d1b8a5",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-accounts\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "94164fd3-c995-4096-9974-faa1562fb760",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"edit-account-1\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f31686ce-00bb-46c2-a737-029df2eda5a7",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-testid=\"custom-number\"]",
+          "targets": [],
+          "value": "abc"
+        },
+        {
+          "id": "278bd700-21d9-428d-b22a-d5d2dfb2d6cb",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"save-account\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "0dcf58bc-9285-47a0-bdba-5b5afc78a19d",
+          "comment": "",
+          "command": "assertText",
+          "target": "css=[data-testid=\"form-error\"]",
+          "targets": [],
+          "value": "Cantidad de empleados: Ingresá un número entero entre 0 y 999999999. No se admiten letras, signos ni decimales."
+        },
+        {
+          "id": "2ab3149b-f024-4cac-adfd-b2263709d6a9",
+          "comment": "",
+          "command": "click",
+          "target": "xpath=//button[normalize-space()=\"Cancelar\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "893cb243-926f-4690-8630-975ae510858c",
+          "comment": "El valor no se guardó",
+          "command": "assertText",
+          "target": "css=[data-testid=\"account-row-account-1\"] .custom-count",
+          "targets": [],
+          "value": "0 de 1 completos"
+        }
+      ]
+    },
+    {
+      "id": "05dc8034-cd67-4897-b97a-3f7edf08c433",
+      "name": "CP-06 El campo solo aparece en su tenant",
+      "commands": [
+        {
+          "id": "1d3c0eac-10c7-4802-aad5-1485bddca6c2",
+          "comment": "Abrir el CRM",
+          "command": "open",
+          "target": "/",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "f96578d1-dff5-47c2-a5e8-24593e797d31",
+          "comment": "Restablecer datos desde Laboratorio QA",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-lab\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "88478408-d79c-45df-9a0c-2bf5d69bcfc9",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"reset-demo\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "a857c354-a4c6-4ab8-b239-5d89155af048",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"confirm-reset\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "b60fdcf9-d2b9-488d-a933-ce97881a7bd7",
+          "comment": "Restablecer también Sur Distribuciones",
+          "command": "select",
+          "target": "css=[data-testid=\"tenant-select\"]",
+          "targets": [],
+          "value": "label=Sur Distribuciones"
+        },
+        {
+          "id": "e62360a6-0ef7-499f-821d-7467e532e18e",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-lab\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "afb46467-f7d9-47fc-b88a-d67063f6f517",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"reset-demo\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "c701b810-b5c6-43cd-943d-1ac9e0e992c1",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"confirm-reset\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "978abd49-5624-4d13-bd76-092b939e921e",
+          "comment": "",
+          "command": "select",
+          "target": "css=[data-testid=\"tenant-select\"]",
+          "targets": [],
+          "value": "label=Atlas Comercial"
+        },
+        {
+          "id": "1adcd4d0-49ff-4425-a432-0a15178f9328",
+          "comment": "Crear el campo Cantidad de empleados",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-fields\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "bdaf98af-54cc-4168-923a-2d58bdf58498",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"new-field\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "41a5136b-4da8-46d6-af93-d352f31138bb",
+          "comment": "",
+          "command": "type",
+          "target": "css=[data-testid=\"field-name\"]",
+          "targets": [],
+          "value": "Cantidad de empleados"
+        },
+        {
+          "id": "37fa1e5d-f95f-4bff-9bd9-2154dcfbef59",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"save-field\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "566605be-8356-4a64-92b8-ad7d2762d4e5",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-accounts\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "d7a1c2ae-f89b-44c6-91d5-2b56e2275800",
+          "comment": "Cambiar a otro tenant",
+          "command": "select",
+          "target": "css=[data-testid=\"tenant-select\"]",
+          "targets": [],
+          "value": "label=Sur Distribuciones"
+        },
+        {
+          "id": "eb386ce4-f262-4dd4-b489-2acaa711afc3",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-fields\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "394a1920-6e2b-45ce-9027-90f311298e0e",
+          "comment": "",
+          "command": "assertElementNotPresent",
+          "target": "css=[data-testid=\"field-definition\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "7ff91f30-2b31-41c5-99fa-ae5753b25ac9",
+          "comment": "Volver al tenant original",
+          "command": "select",
+          "target": "css=[data-testid=\"tenant-select\"]",
+          "targets": [],
+          "value": "label=Atlas Comercial"
+        },
+        {
+          "id": "c9792c39-b54d-4ff0-8553-2745876b3474",
+          "comment": "",
+          "command": "click",
+          "target": "css=[data-testid=\"nav-fields\"]",
+          "targets": [],
+          "value": ""
+        },
+        {
+          "id": "1f46809a-b999-4824-98ef-fec372416dea",
+          "comment": "",
+          "command": "assertElementPresent",
+          "target": "css=[data-testid=\"field-definition\"]",
+          "targets": [],
+          "value": ""
+        }
+      ]
+    }
+  ],
+  "suites": [
+    {
+      "id": "317fd414-5109-4508-9464-8b64f3f81560",
+      "name": "Regresión HU-001",
+      "persistSession": false,
+      "parallel": false,
+      "timeout": 300,
+      "tests": [
+        "4b9036f3-d472-456f-abad-46f377899801",
+        "4781ff4d-e334-4c3d-95bd-6215c5b498b3",
+        "b4915992-c452-40e5-a83d-a90ff0299fed",
+        "4fe6478e-115e-470b-b799-0090e8b94cb3",
+        "67961d58-aa30-421f-a4ae-419913350754",
+        "05dc8034-cd67-4897-b97a-3f7edf08c433"
+      ]
+    }
+  ],
+  "urls": [
+    "http://127.0.0.1:5173/"
+  ],
+  "plugins": []
+}
